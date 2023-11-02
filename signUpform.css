@@ -1,0 +1,150 @@
+body{
+    background-color:#E2E0AF;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    column-gap:;
+    align-items: flex-start;
+}
+
+header{
+    background-color: #E0BE65;
+    width: 602px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 30px;
+    margin-left:-10px;
+    margin-top: 20px;
+}
+#logoBrand{
+    width: 120px;   
+}
+h1{
+    color: #000;
+    text-align:right;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    font-style:italic;
+    font-weight: 600;
+    line-height: normal; 
+    word-spacing: 10px;
+    margin-top: -55px;
+    margin-right: 20px;
+}
+
+#perchero{
+    width: 90%;
+    height:600px;
+    flex-shrink: 0; 
+    margin-bottom: 5px;
+    margin-top: 5px;  
+}
+.inputBox{
+    width: 400px;
+    height: 35px;
+    flex-shrink: 0;
+    background: #E0BE65;
+    margin-left: 15%;
+    margin-top: 20px;
+} 
+.inputBox input{
+    width: 450px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.name{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 15%;
+    margin-bottom: -20px;
+    
+
+}
+.email{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 15%;
+    margin-bottom: -20px;
+}
+.password{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 15%;
+    margin-bottom: -20px;
+}
+
+label {    
+    color: #000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 15%;
+    word-spacing: 3px;
+    font-style: italic;     
+}
+.buttonJoinus{
+    width: 165px;
+    height: 62px;
+    flex-shrink: 0;
+    background:#000;
+    outline: none;
+    border: none;
+    margin-left: 35%;
+    color: #FFF;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-style: normal; 
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 5%; 
+    cursor: pointer;
+}
+.loginQuestion{
+    width: 314px;
+    height: 41px;
+    flex-shrink: 0;
+    color: #000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 10%;
+    margin-top: 50px;
+    word-spacing: 3px;
+    
+}
+.buttonLogin{
+    width: 165px;
+    height: 62px;
+    background: #000;
+    outline: none;
+    border: none;
+    margin-left: 55%;
+    color: #FFF;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: -82px;
+    cursor: pointer;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
