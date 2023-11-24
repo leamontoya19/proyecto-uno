@@ -3,7 +3,6 @@ body{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    column-gap:;
     align-items: flex-start;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -73,7 +72,6 @@ h1{
 .email{
     font-size: 20px;
     font-weight: 540;
-    font-style:;
     margin-left: 15%;
     margin-bottom: -20px;   
 
