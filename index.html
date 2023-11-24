@@ -3,53 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lily Silk-Join Our Membership</title>
+    <link rel="shortcut icon" href="./media/lilylogo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Lily Silk-Join Our Membership</title>
 </head>
 <body>
-    <section class="structure">
+    <main>
+        <section class="structure"></section>
+           <header>
+              <img class="logoBrand" src="/media/LOGO.png" alt="LilySilk brand's logo">
+              <h1> SILK CLUB REWARDS MEMBERSHIP NOW ONLINE!
+              </h1>
+            </header>
+            <br>
 
-     <header>
-        <img class="logoBrand" src="/media/LOGO.png" alt="LilySilk brand's logo">
-         <h1> SILK CLUB REWARDS MEMBERSHIP NOW ONLINE!
-        </h1>
-     </header>
+            <div class="article">
+              <p id="landDescription">Unlock exclusive discounts, enhance rights and an exceptional shopping experience with  our membership update.</p>
+            </div>
+            <br>
+            
+            <div class="emailBox">
+              <i class="bi bi-envelope"></i>
+              <input type="email" name="email"  id="email" placeholder="Enter your email here"  required>
+              <p class="errorMsg"></p>
+            </div>
+            <br>
+            <div class="submitEmail">
+            <a href="/signUpForm.html"><button class="buttonJoinUs" type="submit">Join us now</button>
+            </a> 
+            </div>  
+              
+            <div class="login">
+               <p class="loginQuestion">Already have an account?</p>
+               <button class="buttonLogin" type="submit">Login
+               </button>
+            </div>
+        </section>
 
-     <main>
-        <div class="article">
-            <p id="landDescription">Unlock exclusive discounts, enhance rights and an exceptional shopping experience with  our membership update.</p>
-        </div>
-        <br>
-        <div class="emailBox">
-            <input type="text" 
-            placeholder="Enter your email here"
-            required>
-        </div>
-        <br>
-         <a href="./signUpform.html"><button class="buttonJoinus" type="submit">
-            Join us now
-        </button></a>
-        <br>
-        <div class="login">
-            <p class="loginQuestion">Already have an account?
-            </p>
-            <button class="buttonLogin" type="submit">
-                Login
-            </button>
-        </div>
+        <section class="figure">
+            <div class="carousel" dataCarousel>
+            <button class="carouselButton prev" dataCarouselButton="prev">&#60;</button>
+            <button class="carouselButton next" dataCarouselButton="next" >&#62;</button>
+           <ul  class="carouselNav" dataSlides >
+              <li class="slide" dataActive>
+                <img src="/media/descuentos1.jpg" alt="two women smiling and looking a mobile phone">
+              </li>
+              <li class="slide">
+                <img src="/media/cumple2.jpg" alt="a birthday gift">
+              </li>
+              <li class="slide">
+                <img src="media/mannequin-2566559_1280.jpg" alt="Mannequin with tape measure on the neck">
+              </li>
+            </ul>
+            </div>
+        </section>        
+
         
-      </main>
-    </section>
-  
-     <section class="structure">
-        <img id="figure" src="media/mannequin-2566559_1280.jpg" alt="Mannequin with tape measure on the neck">
-        <p id="textInsidefigure">
-            Tailoring and Customization
-        </p>
-     </section>
-   
     
-
+</main>
+  
+<script src="/js/main.js" ></script>    
+   
     
 </body>
 </html>

@@ -5,19 +5,21 @@ body{
     flex-direction: row;
     column-gap:;
     align-items: flex-start;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 header{
     background-color: #E0BE65;
-    width: 602px;
-    height: 80px;
+    width: 107vh;
+    height: 15vh;
     flex-shrink: 0;
     margin-right: 30px;
     margin-left:-10px;
-    margin-top: 20px;
+    margin-top: 3px;
 }
 #logoBrand{
-    width: 120px;   
+    width: 22.5vh;   
 }
 h1{
     color: #000;
@@ -33,121 +35,213 @@ h1{
 }
 
 #perchero{
+    display: block;
     width: 90%;
-    height:600px;
+    height:570px;
     flex-shrink: 0; 
-    margin-bottom: 5px;
-    margin-top: 5px;  
+    margin-bottom: 3px;
+    margin-top: 3px;  
 }
 .inputBox{
+    border:3px solid #8d7547;
     width: 400px;
     height: 35px;
     flex-shrink: 0;
     background: #E0BE65;
     margin-left: 15%;
     margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
 .inputBox input{
-    width: 450px;
-    height: 40px;
     background: transparent;
     border: none;
     outline: none;
 }
-.name{
-    color: #000;
+.formInput{
+    width: 400px;
+    height: 35px;
+    font-size: medium;   
+}
+
+.name {
     font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 540;
     margin-left: 15%;
     margin-bottom: -20px;
-    
 
 }
 .email{
-    color: #000;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 540;
+    font-style:;
     margin-left: 15%;
-    margin-bottom: -20px;
+    margin-bottom: -20px;   
+
 }
 .password{
-    color: #000;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
+    font-weight: 540;
     line-height: normal;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 15%;
     margin-bottom: -20px;
 }
 
 label {    
-    color: #000;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 15%;
     word-spacing: 3px;
     font-style: italic;     
 }
-.buttonJoinus{
-    width: 165px;
-    height: 62px;
+.buttonJoinUs{
+    width: 160px;
+    height: 60px;
     flex-shrink: 0;
     background:#000;
-    outline: none;
-    border: none;
     margin-left: 35%;
     color: #FFF;
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Cambria, Coch,Georgia, Times, 'Times New Roman', serif;
     font-size: 24px;
     font-weight: 300;
-    margin-top: 5%; 
+    margin-top: 3%; 
     cursor: pointer;
 }
-.buttonJoinus :hover{
-    background-color:#E2E0AF;
+
+.buttonJoinUs:hover{
+    color:#8d7547;
+    border: #E2E0AF;
+}
     
 
+.buttonLogin:hover{
+    color:#8d7547;
+    border: #E2E0AF;
 }
 .loginQuestion{
-    width: 314px;
+    width: 300px;
     height: 41px;
-    flex-shrink: 0;
-    color: #000;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 15px;
     font-weight: 300;
-    line-height: normal;
-    margin-left: 10%;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 50%;
     word-spacing: 3px;
-    
+
 }
 .buttonLogin{
-    width: 165px;
-    height: 62px;
+    width: 100px;
+    height: 45px;
     background: #000;
     outline: none;
     border: none;
-    margin-left: 55%;
+    margin-left: 80%;
     color: #FFF;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-top: -82px;
+    font-size: 20px;
+    margin-top: -72px;
     cursor: pointer;
 }
 .login{
     display: flex;
     flex-direction: column;
+    margin-top:-30px;
+}
+/*----Validation---*/
+.errorMsg{
+    color: brown;
+    font-size:medium;
+    letter-spacing: 1px;
+    margin: -2px;
+}
+
+.formDone{
+    font-style: oblique;
+    margin-top: 2px;
+    margin-left: 34%;
+}
+
+
+
+@media screen and (max-width:550px ){
+
+    #perchero{
+        display: none;
+    }
+
+    header{
+        width: 80vh;
+        height: 12vh;
+        flex-shrink: 0;
+        margin: centre;
+        margin-left: 15px;
+    }
+
+    h1{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal; 
+        word-spacing: 10px;
+        margin-left: 40%;
+        margin-right: 20px;
+        margin-top: -63px;
+    }
+
+    #logoBrand{
+        width: 18vh; 
+    }
+    .inputBox{
+        width: 300px;
+        height: 35px;
+        flex-shrink: 0;
+        background: #E0BE65;
+        margin-left: 15%;
+        margin-top: 20px;
+    } 
+    .inputBox input{
+        width: 450px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    .name{
+        font-size: 16px;
+    }
+    .email{
+        font-size: 16px;
+    }
+    .password{
+        font-size: 16px;
+    }
+    label {   
+        font-size: smaller;   
+        margin-left: -6px;   
+    }
+    .buttonJoinus{
+        width: 130px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .buttonLogin{
+        width: 100px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .loginQuestion{
+        font-size: medium;
+        margin-bottom: 30px;
+
+    }
+    .errorMsg{
+        font-size:small;
+        margin:-5px;
+    }
+    .loginQuestion{
+        width: 170px;
+        height: 40px;
+    
+    }
+
+
+
 }

@@ -3,63 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up to Our Membership</title>
+    <link rel="shortcut icon" href="./media/lilylogo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="signUpform.css">
+    <title>LilySilk-Sign up to Our Membership</title>
 </head>
 <body>
-    <!--poner el display:flex en body-->
-    <section class="structure">
-        <img id="perchero" src="/media/perchero.jpg" alt="clothes on hangers">
-        
-    </section>
-    <section class="structure">
-        <header>
-          <img id="logoBrand" src="/media/LOGO.png" alt="LilySilk brand's logo">
-          <h1>Welcome to Silk Club Rewards!</h1>
-        </header>
-        <br>
-        <form>
-         <p class="name">Name:</p>
+   <div class="structure">
+      <img id="perchero" src="/media/perchero.jpg" alt="clothes on hangers">
+   </div>
+   <section class="structure">
 
-         <div class="inputBox">
-            <input type="text"
-            required>
-         </div>
-         <p class="email">Email:</p>
-         <div class="inputBox">
-            <input type="text"
+      <header>
+         <img id="logoBrand" src="/media/LOGO.png" alt="LilySilk brand's logo">
+         <h1>Welcome to Silk Club Rewards!</h1>
+      </header>
+      <br>
+
+      <form action="" id="signUpForm">
          
-            required>
+         <p class="name" class="formLabel">Name:</p>
+         <div class="inputBox" id="groupName">
+            <input type="text" class="formInput" name="name" id="name"  >
+         
          </div>
-         <p class="password">Password:</p>
-         <div class="inputBox">
-            <input type="password"
-            required>
+
+         <p class="email" class="formLabel">Email:</p>
+         <div class="inputBox" id="groupEmail">
+            <input type="email" class="formInput" name="email" id="email">
+          
          </div>
+
+         <p class="password" class="formLabel">Password:</p>
+         <div class="inputBox" id="groupPassword">
+            <input type="password" class="formInput" name="password" id="password">
+           
+         </div>
+         <br>
       
          <div class="newsletter"> 
             <label>
                <input type="checkbox">
-               I’d like to recieve exclusive offers and latest news.
+               I'd like to recieve exclusive offers and latest news.
             </label>
+         </div>
+         
+         <a href="/html/closingPage.html">
+            <button class="buttonJoinUs" type="submit">Join us now</button>
+         </a>
       
-         </div>
-            <button class="buttonJoinus" type="submit">
-            Join us now
-            </button>
-         <div class="login">
-            <p class="loginQuestion">Already have an account?
-            </p>
-            <button class="buttonLogin" type="submit">
-                Login
-            </button>
-         </div>
+      </form>
 
+      <div class="login">
+         <p class="loginQuestion">Already have an account?</p>
+         <button class="buttonLogin" type="submit">Login</button>
+      </div>
 
-       </form> 
-
-        
-
-    </section>
+   </section>
+   <script src="/js/signUpForm.js"></script>
 </body>
 </html>
