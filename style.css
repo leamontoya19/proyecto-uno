@@ -135,8 +135,8 @@ i{
 .login{
     display: flex;
     flex-direction: row;
-    margin-top: 35px;
-    margin-right: 50%;
+    margin-top: 15px;
+    margin-right:-92%;
     
 }
 
@@ -178,9 +178,8 @@ i{
 /*----Carrusel-----*/
 .figure{
     width: 500px;
-    margin-top: -570px;
-    margin-left: 112%;
-    
+    margin-top: -573px;
+    margin-left: 103%;
 }
 
 .carousel {
