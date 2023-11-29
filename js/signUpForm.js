@@ -1,5 +1,5 @@
 //---Validación Formulario--------
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('#signUpForm');
     const nombreInput = form.querySelector('input[name="name"]');
@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         contraseñaInput.setCustomValidity('');
       }
 
-      if (!/\S+@\S+.\S+/.test(correoInput.value)) {
+      if (!/^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/
+      .test(correoInput.value)) {
         correoInput.setCustomValidity('El correo electrónico debe tener un formato válido.');
         event.preventDefault();
       } else {
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
       correoInput.setCustomValidity(''); // Limpiar el mensaje de validación al modificar el campo
     });
   });
-
+*/
 
 
 

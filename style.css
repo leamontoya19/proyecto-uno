@@ -45,11 +45,10 @@ h1 {
 }
 
 .article {
-    width: 103dvh;
-    height: 34vh;
-    flex-shrink: 0;
+    width: 95vh;
+    height: 30vh;
     background-color:rgba(224, 190, 101, 0.44);
-    margin-left: 60px;
+    margin-left: 15%;
 }
 
 #landDescription {
@@ -69,7 +68,7 @@ h1 {
     align-content: space-between;
     justify-content: center;
     padding-left: 25px;
-    padding-top: 50px;
+    padding-top: 10px;
    
 }
 
@@ -141,8 +140,8 @@ i{
 }
 
 .buttonLogin{
-    width: 100px;
-    height: 45px;
+    width: 90px;
+    height: 40px;
     flex-shrink: 0;
     background:#000;
     outline: none;
@@ -150,7 +149,7 @@ i{
     color: #FFF;
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal; 
     font-weight: 300;
     line-height: normal; 
@@ -167,24 +166,47 @@ i{
     flex-shrink: 0;
     color: #000;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
+    font-size: 12px;
     font-style:italic;
     font-weight: 300;
     line-height: normal;
-    margin-left: 20%;
+    margin-left: 22%;
+    margin-right: -25px;
     
 }
 
-/*----Carrusel-----*/
-.figure{
-    width: 500px;
-    margin-top: -573px;
-    margin-left: 103%;
-}
 
+figcaption{
+    width:37.0625vw;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-top: -8%;
+    color:#000;
+    word-spacing: 5px;
+    letter-spacing: 2px; 
+    text-shadow: 1px 1px 2px #E0BE65;
+    font-style: italic;   
+}
+/*----Carrusel-----*/ 
+/*
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+
+}*/
+.carousel-box{
+    margin-left: 104%;
+    margin-top: -76.3%;
+    
+}
 .carousel {
-    width: 39.0625vw;
-    height: 98vh;
+    width: 37.0625vw;
+    height: 93vh;
     position: relative;
     margin-bottom: 1px;
 }
@@ -199,7 +221,7 @@ i{
 .slide{
     position: absolute;
     inset: 0;
-    opacity:;
+    opacity:0;
     transition: 200ms opacity ease-in-out;
     transition-delay: 200ms;
 }
@@ -212,13 +234,13 @@ i{
     object-position: center;
 
 }
-.slide [dataActive]{
+.slide[data-active]{
     opacity: 1;
     z-index: 1;
     transition-delay: 0ms;
 }
 
-.carouselButton{
+.carousel-button{
     position: absolute;
     z-index: 2; /*to make sure they're top of the images*/
     background: none;
@@ -233,18 +255,18 @@ i{
     background-color:#0000002a;
 }
 
-.carouselButton:hover,
-.carouselButton:focus {
+.carousel-button:hover,
+.carousel-button:focus {
     color:#E2E0AF;
     background-color: #00000060;
 }
 
-.carouselButton.prev{
+.carousel-button.prev{
     left: 1rem;
 
 }
 
-.carouselButton.next {
+.carousel-button.next {
     right: 1rem;
 
 }

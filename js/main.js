@@ -10,17 +10,18 @@
 
 
 
-const buttons = document.querySelectorAll("[dataCarouselButton]")
+const buttons = document.querySelectorAll("[data_carousel_button]");
 
 
 buttons.forEach(button => {
    button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1 
     const slides = button
-    .closest("[dataCarousel]")
-    .querySelector("[dataSlides]")
+    .closest("[data-carousel]")
+    .querySelector("[data-slides]");/*with this no mattter how many carousels we have they´re going to work well*/ 
 
-    const activeSlide = slides.querySelector("[dataActive]")
+    const activeSlide = slides.querySelector("[data-active]");
+   
     
     //to make sure that it's going to be a continuous loop of images
     let newIndex = [...slides.children].indexOf(activeSlide) + offset
@@ -30,9 +31,11 @@ buttons.forEach(button => {
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
 
+    console.log(newIndex);
+
 
    })
-  
+  console.log(buttons);
 })
 
 
