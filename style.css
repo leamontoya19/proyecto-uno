@@ -1,21 +1,21 @@
-body {
+body, html {
     background-color: #E2E0AF;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
-    
-
 }
 
 main{
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
-
-
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .structure{ 
     display: flex;
+
 }
 
 header {
@@ -191,14 +191,10 @@ figcaption{
     font-style: italic;   
 }
 /*----Carrusel-----*/ 
-/*
+
 *, *::before, *::after{
     box-sizing: border-box;
 }
-body{
-    margin:0;
-
-}*/
 .carousel-box{
     margin-left: 104%;
     margin-top: -76.3%;
