@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const correoInput = form.querySelector('input[name="email"]');
     const submitButton = form.querySelector('.buttonJoinUs');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('', function(event) {
       if (!/^[A-Z][a-z]+$/.test(nombreInput.value)) {
         nombreInput.setCustomValidity('El nombre debe comenzar con mayúscula y contener solo letras.');
         event.preventDefault();
@@ -42,8 +42,27 @@ document.addEventListener('DOMContentLoaded', function() {
     correoInput.addEventListener('input', function() {
       correoInput.setCustomValidity(''); // Limpiar el mensaje de validación al modificar el campo
     });
+  );
+  */
+
+  //----Modal de T&C------
+  const openModal=document.querySelector(".buttonJoinUs");
+  const modal=document.querySelector(".modal");
+  
+  openModal.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal.classList.add("modal--show");
   });
-*/
+
+  const closeModal=document.querySelector(".modalClose");
+
+  closeModal.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal.classList.remove("modal--show");
+    
+  })
+
+
 
 
 

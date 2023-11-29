@@ -32,11 +32,18 @@ h1{
     margin-top: -55px;
     margin-right: 20px;
 }
+.imagen{
+    width: auto;
+}
+.structure{
+    margin-left: -20%;
+
+}
 
 #perchero{
     display: block;
-    width: 90%;
-    height:570px;
+    width: 60%;
+    height:510px;
     flex-shrink: 0; 
     margin-bottom: 3px;
     margin-top: 3px;  
@@ -92,7 +99,6 @@ label {
 .buttonJoinUs{
     width: 160px;
     height: 60px;
-    flex-shrink: 0;
     background:#000;
     margin-left: 35%;
     color: #FFF;
@@ -157,19 +163,62 @@ label {
     margin-top: 2px;
     margin-left: 34%;
 }
+/*-----Modal-----*/
+.modal{
+    position:fixed;
+    top: 0;
+    left:0 ;
+    right: 0;
+    bottom: 0;
+    background-color: #8d754770;
+    display:flex;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+.containerModal{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color:#8d7547;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+.terms{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.textModal{
+    font-size: 0.8rem;
+}
+.closeModal{
+    color: #FFF;
+    background-color: #000;
+    border: 1px solid #000;
+    display: inline-block;
+}
+/*la siguiente es una clase modificadora usando bem*/
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+}
 
 
 
 @media screen and (max-width:550px ){
 
     #perchero{
-        display: none;
+        display: none
+    }
+    .structure{
+        margin-left: 0;
     }
 
     header{
         width: 80vh;
         height: 12vh;
-        flex-shrink: 0;
         margin: centre;
         margin-left: 15px;
     }
@@ -203,42 +252,47 @@ label {
         outline: none;
     }
     .name{
-        font-size: 16px;
+        font-size: 15px;
     }
     .email{
-        font-size: 16px;
+        font-size: 15px;
     }
     .password{
-        font-size: 16px;
+        font-size: 15px;
     }
     label {   
         font-size: smaller;   
         margin-left: -6px;   
     }
     .buttonJoinus{
-        width: 130px;
-        height: 50px;
+        width: 149px;
+        height: 51px;
         font-size: 20px;
     }
     .buttonLogin{
-        width: 100px;
-        height: 45px;
-        font-size: 20px;
+        width: 60px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: -84px;
+        margin-left: 377px;
+        
     }
     .loginQuestion{
-        font-size: medium;
+        font-size: small;
         margin-bottom: 30px;
 
     }
-    .errorMsg{
-        font-size:small;
-        margin:-5px;
+    .containerModal{
+        max-width: 400px;
     }
-    .loginQuestion{
-        width: 170px;
-        height: 40px;
+    .terms{
+        font-size: 0.9rem;
+        text-decoration: underline;
+    }
+    .textModal{
+        font-size: 0.5rem;
     
-    }
+   
 
 
 
