@@ -1,15 +1,3 @@
-/*document.querySelectorAll(".carousel").forEach(carousel=>{
-   const buttons = carousel.querySelectorAll("carouselButton");
-   console.log(buttons);
-   const buttonsHtml = Array.from(Image, () => {
-      return '<li class="slide"></li>';
-   });
-   console.log(buttonsHtml);
-});*/
-
-
-
-
 const buttons = document.querySelectorAll("[data_carousel_button]");
 
 
