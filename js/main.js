@@ -32,12 +32,8 @@ buttons.forEach(button => {
 const toggleSwitch = document.querySelector('.toggleSwitch');
 const body = document.querySelector('body');
 
-toggleSwitch.addEventListener('change', function() {
-  if (this.checked) {
-    body.classList.add('darkMode');
-  } else {
-    body.classList.remove('darkMode');
-  }
+toggleSwitch.addEventListener('change', () => {
+  body.classList.toggle('darkMode');
 });
 
 

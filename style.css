@@ -15,7 +15,6 @@ main{
 
 .structure{ 
     display: flex;
-
 }
 
 header {
@@ -36,7 +35,6 @@ h1 {
     margin-left: 200px;
     margin-right: 30px;
    word-spacing: 15px;
-
 }
 
 .logoBrand {
@@ -67,8 +65,7 @@ h1 {
     align-content: space-between;
     justify-content: center;
     padding-left: 25px;
-    padding-top: 10px;
-   
+    padding-top: 10px;  
 }
 
 .emailBox{
@@ -78,8 +75,7 @@ h1 {
     margin-left: 22%;
     color: #000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 300;
-   
+    font-weight: 300;  
 }
 
 .emailBox input{
@@ -107,8 +103,7 @@ i{
     color:#8D7547;
     padding-left:10px;
     margin-top:-10px;
-    font-size: xx-large;
-    
+    font-size: xx-large;   
 }
 
 .buttonJoinUs{
@@ -129,16 +124,14 @@ i{
     cursor: pointer;  
 }
 .buttonJoinUs:hover{
-    color:#8d7547;
-    
+    color:#8d7547;    
 }
 
 .login{
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    margin-right:-92%;
-    
+    margin-right:-92%;  
 }
 
 .buttonLogin{
@@ -155,8 +148,7 @@ i{
     font-style: normal; 
     font-weight: 300;
     line-height: normal; 
-    cursor: pointer; 
-       
+    cursor: pointer;       
 }
 .buttonLogin:hover {
     color:#8d7547;
@@ -173,8 +165,7 @@ i{
     font-weight: 300;
     line-height: normal;
     margin-left: 22%;
-    margin-right: -25px;
-    
+    margin-right: -25px;   
 }
 
 figcaption{
@@ -198,8 +189,8 @@ figcaption{
     box-sizing: border-box;
 }
 .carousel-box{
-    margin-left: 104%;
-    margin-top: -76.3%;
+    margin-left: 107%;
+    margin-top: -76%;
     
 }
 .carousel {
@@ -213,7 +204,6 @@ figcaption{
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 
 .slide{
@@ -240,7 +230,7 @@ figcaption{
 
 .carousel-button{
     position: absolute;
-    z-index: 2; /*to make sure they're top of the images*/
+    z-index: 2;
     background: none;
     border: none;
     font-size: 4rem;
@@ -261,15 +251,66 @@ figcaption{
 
 .carousel-button.prev{
     left: 1rem;
-
 }
 
 .carousel-button.next {
     right: 1rem;
-
 }
 
-/*---Dark mode-----*/
+/*---Toggle--*/
+.toggle{
+    width: fit-content;
+    margin-top: -23px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color:#E0BE65;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#8D7547;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  /*---Dark mode-----*/
 
 .darkMode {
     background-color: #212121;
@@ -291,13 +332,6 @@ figcaption{
   .darkMode .buttonLogin:hover{
     color: #212121; 
   }
-
-
-
-
-
-
-
 
 @media screen and (max-width:550px ){
     
