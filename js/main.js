@@ -1,5 +1,6 @@
-const buttons = document.querySelectorAll("[data_carousel_button]");
+//------Carousel-------
 
+const buttons = document.querySelectorAll("[data_carousel_button]");
 
 buttons.forEach(button => {
    button.addEventListener("click", () => {
@@ -22,9 +23,22 @@ buttons.forEach(button => {
     console.log(newIndex);
 
 
-   })
+   });
   console.log(buttons);
-})
+});
+
+//----Dark Mode-----
+
+const toggleSwitch = document.querySelector('.toggleSwitch');
+const body = document.querySelector('body');
+
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    body.classList.add('darkMode');
+  } else {
+    body.classList.remove('darkMode');
+  }
+});
 
 
 

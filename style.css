@@ -1,4 +1,4 @@
-body, html {
+body{
     background-color: #E2E0AF;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
@@ -55,7 +55,6 @@ h1 {
     display: flex;
     width: 480px;
     height: 200px;
-    flex-shrink: 0;
     color: #000;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -89,23 +88,26 @@ h1 {
     background: transparent;
     border: none;
     outline: none;
+    font-size: 19px;
 }
 
 .emailBox input::placeholder{
     color:#8D7547;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     line-height:normal;
     word-spacing: 5px;
     letter-spacing: 5px;
     text-align: center;
+    
 }
 i{
     color:#8D7547;
-    padding:8px;
-    font-size: large;
+    padding-left:10px;
+    margin-top:-10px;
+    font-size: xx-large;
     
 }
 
@@ -175,7 +177,6 @@ i{
     
 }
 
-
 figcaption{
     width:37.0625vw;
     text-align: center;
@@ -190,6 +191,7 @@ figcaption{
     text-shadow: 1px 1px 2px #E0BE65;
     font-style: italic;   
 }
+
 /*----Carrusel-----*/ 
 
 *, *::before, *::after{
@@ -266,6 +268,36 @@ figcaption{
     right: 1rem;
 
 }
+
+/*---Dark mode-----*/
+
+.darkMode {
+    background-color: #212121;
+    color: #ffffff;
+  }
+  /* Estilos específicos para ciertos elementos cuando el modo oscuro está activado */
+  .darkMode .loginQuestion {
+    color: #ffffff;
+  }
+  .darkMode .buttonJoinUs{
+    background-color: #8d7547; 
+  }
+  .darkMode .buttonJoinUs:hover{
+    color: #212121; 
+  }
+  .darkMode .buttonLogin{
+    background-color: #8d7547; 
+  }
+  .darkMode .buttonLogin:hover{
+    color: #212121; 
+  }
+
+
+
+
+
+
+
 
 @media screen and (max-width:550px ){
     
