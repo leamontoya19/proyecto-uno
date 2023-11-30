@@ -47,7 +47,7 @@ header{
 /*main*/
 
 main {
-    background-image: url(/media/mujersentada.webp);
+    background-image: url(../media/mujersentada.webp);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

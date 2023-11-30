@@ -1,3 +1,25 @@
+  //----Modal de T&C------
+  const openModal=document.querySelector(".buttonJoinUs");
+  const modal=document.querySelector(".modal");
+  
+  openModal.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal.classList.add("modal--show");
+  });
+
+  const closeModal=document.querySelector(".modalClose");
+
+  closeModal.addEventListener("click", (e)=>{
+    e.preventDefault();
+    modal.classList.remove("modal--show");
+    
+  })
+
+
+
+
+  
+
 //---Validación Formulario--------
 /*
 document.addEventListener('DOMContentLoaded', function() {
@@ -44,30 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   );
   */
-
-  //----Modal de T&C------
-  const openModal=document.querySelector(".buttonJoinUs");
-  const modal=document.querySelector(".modal");
-  
-  openModal.addEventListener("click", (e)=>{
-    e.preventDefault();
-    modal.classList.add("modal--show");
-  });
-
-  const closeModal=document.querySelector(".modalClose");
-
-  closeModal.addEventListener("click", (e)=>{
-    e.preventDefault();
-    modal.classList.remove("modal--show");
-    
-  })
-
-
-
-
-
-
-
 
 
 
